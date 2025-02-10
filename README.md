@@ -42,7 +42,14 @@ To get more information about Django project here: https://docs.djangoproject.co
 ------------------------------ To use API------------------------------------
 You can’t use the API directly to GET or POST information. To do this, you have to use token. 
 
-how get Token
+how get Token Step by Step 
 
-![Image](https://github.com/user-attachments/assets/b16cfd85-72be-4c01-90fa-9e94b4b1863f)
+First
+![Image](https://github.com/user-attachments/assets/b55d8d37-6c2f-441e-bae4-7347f05b14e0)
+
+Second
+![Image](https://github.com/user-attachments/assets/34d1ee01-ddf4-45af-b7c1-31dccf612bee)
+
+Finally
+![Image](https://github.com/user-attachments/assets/ef3353ad-00f4-4ef9-a3fa-c55b61c553dd)
 
