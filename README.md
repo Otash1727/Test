@@ -26,15 +26,7 @@ The program was created using Django + Postgresql + Rest Api.
     ------ python manage.py runserver --------
     after this command you see Django online on console. 
     
-    --->>PS C:\Users\user\Desktop\your_project> python manage.py runserver
-    Watching for file changes with StatReloader
-    Performing system checks...
-
-    System check identified no issues (0 silenced).
-    January 24, 2025 - 21:48:51
-    Django version 5.1.5, using settings 'base.settings' 
-    Starting development server at http://127.0.0.1:8000/
-    Quit the server with CTRL-BREAK. <<--------
+    ![Image](https://github.com/user-attachments/assets/a069178a-a676-4e49-8811-0ce41c86540d)
 
 
 To get more information about Django project here: https://docs.djangoproject.com/en/5.1/intro/tutorial01/
