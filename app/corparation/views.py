@@ -6,6 +6,7 @@ from rest_framework import status
 from .models import Organazation
 from .serializer.serializers import OrganizationDetailSerializer  #
 from .authentication import OrganizationTokenAuthentication
+from django.shortcuts import get_object_or_404
 
 from rest_framework.permissions import AllowAny
 
@@ -41,8 +42,16 @@ class OrganizationListAPIView(APIView):
 class OrganizationDetailAPIView(RetrieveAPIView):
     authentication_classes = [OrganizationTokenAuthentication]
     permission_classes = [IsAuthenticated]
-    queryset = Organazation.objects.all()
-    serializer_class = OrganizationDetailSerializer
+    
+    def get(self, request, pk):
+        organization = get_object_or_404(Organazation, pk=pk)
+
+        # Проверяем, соответствует ли организация аутентифицированному пользователю (по токену)
+        if organization.token != request.user.token:
+            return Response({"detail": "Unauthorized"}, status=403)
+
+        serializer = OrganizationDetailSerializer(organization)
+        return Response(serializer.data)
 
 
 
