@@ -45,3 +45,16 @@ Second
 Finally
 ![Image](https://github.com/user-attachments/assets/ef3353ad-00f4-4ef9-a3fa-c55b61c553dd)
 
+
+By token, you can get data through Postman, Swagger or others.
+
+Get API data through browser 
+http://127.0.0.1:8000/api/organizations/?token=YOUR_TOKEN
+or
+http://127.0.0.1:8000/api/YOUR_ID/organizations/?token=YOUR_TOKEN  
+Users receive their data through their tokens.!!!!!!!
+
+
+
+
+
